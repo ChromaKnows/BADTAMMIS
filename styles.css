@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px; /* Added padding to prevent content from touching the edges */
+}
+
+.link-container {
+    background: #000; /* Black background */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Adjusted to be responsive */
+    max-width: 680px; /* Maximum width of the container */
+    margin: auto; /* Center the container on the page */
+}
+
+.logo {
+    width: 450px; /* Adjusted size */
+    height: auto; /* Keep aspect ratio */
+    margin: 0 auto 30px; /* Auto margins for left and right to center, 30px margin below */
+    display: block; /* Ensures the margin is applied */
+}
+
+.image-row {
+    display: flex; /* Use flexbox instead of grid */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    gap: 10px; /* Space between the images */
+    padding-bottom: 40px; /* Space below the image row */
+}
+
+.image-row img {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 40px; /* Maximum height of images */
+}
+
+.link-container a {
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff; /* White text */
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    text-align: center; /* Center the text within the links */
+    font-weight: bold; /* Make the text bold */
+}
+
+.link-container a:hover {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+}
+
+.link-container a.social-icon {
+    border: none; /* Removes the border specifically for social icons */
+    padding: 0;
+    margin: 0;
+    background-color: transparent; /* Ensures no background color */
+}
+
+.link-container a.social-icon:hover {
+    background-color: transparent; /* Ensures no background change on hover */
+    color: inherit; /* Keeps the color the same on hover */
+}
+
+.out-now {
+    color: #fff; /* White text color */
+    font-size: 1.5em; /* Adjust the size as needed */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Spacing below the text */
+}
+
+.bottom-text {
+    opacity: 0.5; /* Sets the opacity to 50% */
+    color: #fff; /* Sets the text color, adjust as needed */
+    font-size: 0.7em; /* Smaller font size */
+    text-align: center; /* Centers the text */
+    margin: 20px 0; /* Adds margin above and below the text */
+    padding: 0 20px; /* Adds padding on the sides for better readability */
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 200px; /* Smaller logo on smaller screens */
+    }
+    .image-row img {
+        max-height: 30px; /* Smaller images on smaller screens */
+    }
+	
+    .embed-container {
+        margin-bottom: 20px; /* Spacing below the embed container */
+        /* Add more styles as needed, depending on what you're embedding */
+		
+	.bottom-text {
+     font-size: 0.4em; /* Slightly smaller on mobile */
+     padding: 0 10px; /* Less padding on the sides */
+		
+		
+    }
+}
